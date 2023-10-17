@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'bard';
+    src: url('/fonts/bard.woff2');
+}
+@layer base {
+    .font-bard {
+        font-family: bard;
+    }
+}
