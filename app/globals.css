@@ -6,8 +6,15 @@
     font-family: 'bard';
     src: url('/fonts/bard.woff2');
 }
+@font-face {
+    font-family: 'sfpro';
+    src: url('/fonts/sfpro.woff2');
+}
 @layer base {
     .font-bard {
         font-family: bard;
+    }
+    .font-sf {
+        font-family: sfpro;
     }
 }
