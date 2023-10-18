@@ -17,4 +17,18 @@
     .font-sf {
         font-family: sfpro;
     }
+    .gradient-cool {
+        -webkit-text-fill-color: transparent;
+        box-decoration-break: clone;
+        background: url('/gradient/cool.png');
+        background-clip: text;
+        background-size: 100% 100%;
+    }
+    .gradient-full {
+        -webkit-text-fill-color: transparent;
+        box-decoration-break: clone;
+        background: url('/gradient/full.png');
+        background-clip: text;
+        background-size: 100% 100%;
+    }
 }
