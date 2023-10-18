@@ -2,9 +2,9 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <header className='border-b border-gray-300 h-16'>
-            <div className='flex h-full max-w-7xl mx-auto items-center lg:px-14 md:px-6 px-5'>
-                <nav className='flex relative w-full z-50 justify-between items-center'>
+        <header className='border-b border-gray-300 h-20'>
+            <div className='flex h-full max-w-7xl mx-auto items-center lg:px-8 md:px-4 px-5'>
+                <nav className='flex relative mx-12 w-full z-50 justify-between items-center'>
                     <div className='flex items-center shrink-0'>
                         <a href="/" className='text-2xl font-sf font-medium'>
                             Deepak Negi

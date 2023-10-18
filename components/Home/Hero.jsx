@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import Author from '@/public/creator.png'
+import Author from '@/public/peeps.png'
+import Auth from '@/public/peeps01.png'
 import Insta from '@/public/social/insta.svg'
 import Facebook from '@/public/social/facebook.svg'
 import Twitter from '@/public/social/twitter.svg'
@@ -9,7 +10,7 @@ const Hero = () => {
     return (
         <section className='relative overflow-hidden lg:py-20 py-16'>
             <div className='max-w-7xl mx-auto px-8 flex  gap-8 items-center'>
-                <div className='flex flex-col space-y-8 mx-12 lg:items-start items-center max-w-4xl'>
+                <div className='flex flex-col space-y-8 mx-12 mt-14 lg:items-start items-center max-w-4xl'>
                     <h1 className='font-sf font-semibold text-left text-6xl tracking-wider leading-[4rem]'>
                         <span className='relative'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="249" height="22" viewBox="0 0 249 22" fill="currentColor" className="absolute h-[1.25rem] text-blue-200 top-[3.5rem] -z-10">
@@ -18,7 +19,7 @@ const Hero = () => {
                             businesses turn their ideas into reality
                         </span>
                     </h1>
-                    <p className='text-gray-600'>
+                    <p className='text-gray-500 text-base'>
                         I&apos;m a passionate developer, entrepreneur, and general technology enthusiast living in San Francisco.
                         I&apos;ve worked with hundreds of startups to help them develop their ideas into profitable businesses.
                     </p>
@@ -64,10 +65,13 @@ const Hero = () => {
                 <div className='w-full hidden lg:block max-w-md lg:mr-0 mx-auto'>
                     <div>
                         <Image
-                            src={Author}
+                            src={Auth}
                             alt='author-image'
-                            className='w-[65%] brightness-90'
+                            className='w-[85%]'
                         />
+                    </div>
+                    <div className='block absolute top-[9rem] -rotate-12'>
+                        <span className='text-2xl text-slate-600 font-bard'>Hi, I&apos;m Deepak!</span>
                     </div>
                 </div>
             </div>
