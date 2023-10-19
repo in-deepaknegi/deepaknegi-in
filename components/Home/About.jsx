@@ -5,7 +5,7 @@ const About = () => {
         <section className='relative overflow-hidden pt-24 pb-20'>
             <div className='max-w-7xl mx-auto px-8'>
                 <div className='mx-12'>
-                    <div className='grid grid-cols-2 gap-16 items-center lg:mx-0'>
+                    <div className='grid md:grid-cols-2 grid-col-1 gap-16 items-center lg:mx-0'>
                         <h2 className='text-5xl max-w-lg font-medium'>
                             I&apos;m your <span className='gradient-cool'>all-in-one </span>
                             project solution
