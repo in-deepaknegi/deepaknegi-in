@@ -3,6 +3,7 @@ import Navbar from '../Navbar'
 import Hero from './Hero'
 import About from './About'
 import Footer from '../Footer'
+import Tools from './Tools'
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
         <Navbar />
         <Hero />
         <About />
+        <Tools />
         <Footer />
     </>
   )
