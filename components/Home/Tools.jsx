@@ -15,7 +15,7 @@ const Tools = () => {
         <section className='relative overflow-hidden pt-16 font-sf'>
             <div className='max-w-7xl mx-auto px-3 md:px-6 lg:px-10'>
                 <div className='mx-3 md:px-6 lg:px-10'>
-                    <h2 className='sm:max-w-xl text-5xl md:text-6xl font-medium'>
+                    <h2 className='sm:max-w-xl text-4xl md:text-5xl font-medium'>
                         The tools I use on my
                         <span className='gradient-fire'> day-to-day</span>
                     </h2>

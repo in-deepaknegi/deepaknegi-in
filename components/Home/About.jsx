@@ -10,7 +10,7 @@ const About = () => {
             <div className='max-w-7xl mx-auto px-3 md:px-6 lg:px-10'>
                 <div className='mx-3 md:mx-6 lg:mx-10'>
                     <div className='grid lg:grid-cols-2 grid-col-1 gap-8 lg:gap-16 items-center lg:mx-0'>
-                        <h2 className='text-5xl md:text-6xl font-medium'>
+                        <h2 className='md:max-w-md text-4xl md:text-5xl font-medium'>
                             I&apos;m your <span className='gradient-cool'>all-in-one </span>
                             project solution
                         </h2>
