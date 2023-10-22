@@ -5,13 +5,12 @@ import Auth from '@/public/peeps01.png'
 import Insta from '@/public/social/insta.svg'
 import Facebook from '@/public/social/facebook.svg'
 import Twitter from '@/public/social/twitter.svg'
-import ReactIcon from '@/public/tools/react.svg'
 
 const Hero = () => {
     return (
-        <section className='relative overflow-hidden lg:py-20 py-16'>
-            <div className='max-w-7xl mx-auto px-8 flex gap-8 items-center'>
-                <div className='flex flex-col space-y-8 mx-12 mt-14 lg:items-start items-center max-w-4xl'>
+        <section className='relative overflow-hidden py-5 md:py-10 lg:py-20'>
+            <div className='max-w-7xl mx-auto px-3 md:px-6 lg:px-10 flex gap-8 items-center'>
+                <div className='flex flex-col space-y-8 mx-3 md:mx-6 lg:mx-10 mt-14 lg:items-start items-center max-w-4xl'>
                     <h1 className='font-sf font-semibold text-left text-6xl tracking-wider leading-[4rem]'>
                         <span className='relative'>
                             <span className='gradient-full'>Helping businesses </span>

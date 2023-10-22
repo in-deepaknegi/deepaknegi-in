@@ -6,11 +6,11 @@ import Responsive from '@/public/info/responsive.svg'
 
 const About = () => {
     return (
-        <section className='relative overflow-hidden pt-24 pb-20'>
-            <div className='max-w-7xl mx-auto px-3 md:px-8'>
-                <div className='mx-3 md:mx-12'>
-                    <div className='grid md:grid-cols-2 grid-col-1 gap-16 items-center lg:mx-0'>
-                        <h2 className='text-5xl max-w-lg font-medium'>
+        <section className='relative overflow-hidden pt-24 pb-20 font-sf'>
+            <div className='max-w-7xl mx-auto px-3 md:px-6 lg:px-10'>
+                <div className='mx-3 md:mx-6 lg:mx-10'>
+                    <div className='grid lg:grid-cols-2 grid-col-1 gap-8 lg:gap-16 items-center lg:mx-0'>
+                        <h2 className='text-5xl md:text-6xl font-medium'>
                             I&apos;m your <span className='gradient-cool'>all-in-one </span>
                             project solution
                         </h2>

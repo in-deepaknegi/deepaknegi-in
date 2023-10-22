@@ -3,8 +3,8 @@ import React from 'react'
 const Navbar = () => {
     return (
         <header className='border-b border-gray-300 h-20'>
-            <div className='flex h-full max-w-7xl mx-auto items-center lg:px-8 md:px-4 px-5'>
-                <nav className='flex relative mx-12 w-full z-50 justify-between items-center'>
+            <div className='flex h-full max-w-7xl mx-auto items-center px-3 md:px-6 lg:px-10'>
+                <nav className='flex relative mx-3 md:mx-6 lg:mx-10 w-full z-50 justify-between items-center'>
                     <div className='flex items-center shrink-0'>
                         <a href="/" className='text-2xl font-sf font-medium'>
                             Deepak Negi

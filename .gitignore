@@ -36,3 +36,6 @@ next-env.d.ts
 
 #environment variable file
 .env
+
+# to-do file
+/to-do.md
