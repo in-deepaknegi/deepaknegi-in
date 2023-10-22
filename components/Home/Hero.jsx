@@ -21,13 +21,13 @@ const Hero = () => {
                         I&apos;m a passionate developer, your to-go developer for creating stunning websites. Over the years, I&apos;ve
                         had the privilege of collaborating with a diverse range of startups, assisting them in transforming their concepts into thriving businesses.
                     </p>
-                    <div className='flex w-full'>
+                    <div className='flex sm:flex-row flex-col w-full'>
                         <div>
                             <button className='bg-black rounded-full px-3 py-2 text-white'>
                                 Book a call with me
                             </button>
                         </div>
-                        <div className='ml-20'>
+                        <div className='sm:ml-20 sm:mt-0 mt-4 sm:mx-0 mx-3'>
                             <ul className='flex gap-4'>
                                 <li>
                                     <a href="#">

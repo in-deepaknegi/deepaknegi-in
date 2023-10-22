@@ -15,12 +15,12 @@ const Tools = () => {
         <section className='relative overflow-hidden pt-16 font-sf'>
             <div className='max-w-7xl mx-auto px-3 md:px-6 lg:px-10'>
                 <div className='mx-3 md:px-6 lg:px-10'>
-                    <h2 className='sm:max-w-xl text-4xl md:text-5xl font-medium'>
+                    <h2 className='md:max-w-lg text-4xl md:text-5xl font-medium'>
                         The tools I use on my
                         <span className='gradient-fire'> day-to-day</span>
                     </h2>
                     
-                    <div className='flex relative mb-10 justify-between overflow-x-clip gap-x-8'>
+                    <div className='mt-8 flex relative mb-10 justify-between overflow-x-clip gap-x-8'>
                         <div className='flex w-[4.5rem] h-[4.5rem] mt-16 bg-gray-50 border items-center justify-evenly rounded-full flex-shrink-0'>
                             <Image
                                 src={Html}
