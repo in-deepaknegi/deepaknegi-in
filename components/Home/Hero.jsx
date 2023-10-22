@@ -9,8 +9,8 @@ import Twitter from '@/public/social/twitter.svg'
 const Hero = () => {
     return (
         <section className='relative overflow-hidden py-5 md:py-10 lg:py-20'>
-            <div className='max-w-7xl mx-auto px-3 md:px-6 lg:px-10 flex gap-8 items-center'>
-                <div className='flex flex-col space-y-8 mx-3 md:mx-6 lg:mx-10 mt-14 lg:items-start items-center max-w-4xl'>
+            <div className='max-w-7xl flex lg:flex-row flex-col-reverse mx-auto px-3 md:px-6 lg:px-10 gap-3 md:gap-8 items-center'>
+                <div className='flex flex-col space-y-8 mx-3 md:mx-6 lg:mx-10 mt-2 lg:mt-14 lg:items-start items-center max-w-4xl'>
                     <h1 className='font-sf font-semibold text-left text-5xl md:text-6xl tracking-wider leading-[4rem]'>
                         <span className='relative'>
                             <span className='gradient-full'>Helping businesses </span>
@@ -60,15 +60,13 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full hidden lg:block max-w-md lg:mr-0 mx-auto'>
-                    <div>
+                <div className='w-full max-w-md lg:mr-0 mx-auto'>
                         <Image
                             src={Auth}
                             alt='author-image'
-                            className='w-[85%]'
+                            className='w-[70%] md:w-[85%] mx-auto'
                         />
-                    </div>
-                    <div className='block absolute top-[9rem] -rotate-12'>
+                    <div className='hidden lg:block absolute top-[9rem] -rotate-12'>
                         <span className='text-2xl text-slate-600 font-bard'>Hi, I&apos;m Deepak!</span>
                     </div>
                     {/* <div className='flex gap-3 absolute bg-gray-100 border px-2 py-1 rounded-3xl top-[8rem] right-8'>
