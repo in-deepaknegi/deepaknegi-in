@@ -9,15 +9,15 @@ const Work = () => {
                 <div className='mx-3 md:mx-0 text-center'>
                     <h2 className='my-4 text-5xl md:text-6xl font-medium'>Check out my
                         <span className='gradient-full'> latest work</span></h2>
-                    <p className='mx-auto max-w-3xl text-lg text-gray-600'>
+                    <p>
                         My goal is to create effective digital experiences that make people&apos;s lives easier and better. I hope my work is a reflection of this.
                     </p>
                 </div>
-                <div className='mt-16 relative mx-12 max-w-none'>
-                    <div className='flex lg:flex-row flex-col gap-4 bg-gray-100 rounded-xl lg:shadow-xl lg:pb-10 mb-4'>
+                <div className='mt-16 relative mx-3 md:mx-12 max-w-none'>
+                    <div className='flex lg:flex-row flex-col gap-4 bg-slate-50 rounded-xl lg:shadow-xl lg:pb-10 mb-4'>
                         <div className='lg:w-[25%] mt-10 lg:ml-10 mx-3 md:mx-8'>
                             <h3 className='text-3xl my-1 md:my-5 tracking-wider'>Mridakriti</h3>
-                            <p className='hidden md:block tracking-wide text-gray-700'>
+                            <p className='text-gray-500'>
                                 I helped Horizons in Perspective develop a new branding and website experience, as well as an engaging product design for their bi-annual journal publication.
                             </p>
                             <button className='hidden md:block mt-10 text-base text-blue-500'>

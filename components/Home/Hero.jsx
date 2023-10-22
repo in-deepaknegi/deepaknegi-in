@@ -11,13 +11,13 @@ const Hero = () => {
         <section className='relative overflow-hidden py-5 md:py-10 lg:py-20'>
             <div className='max-w-7xl mx-auto px-3 md:px-6 lg:px-10 flex gap-8 items-center'>
                 <div className='flex flex-col space-y-8 mx-3 md:mx-6 lg:mx-10 mt-14 lg:items-start items-center max-w-4xl'>
-                    <h1 className='font-sf font-semibold text-left text-6xl tracking-wider leading-[4rem]'>
+                    <h1 className='font-sf font-semibold text-left text-5xl md:text-6xl tracking-wider leading-[4rem]'>
                         <span className='relative'>
                             <span className='gradient-full'>Helping businesses </span>
                              turn their ideas into reality
                         </span>
                     </h1>
-                    <p className='text-gray-700 text-base'>
+                    <p>
                         I&apos;m a passionate developer, your to-go developer for creating stunning websites. Over the years, I&apos;ve
                         had the privilege of collaborating with a diverse range of startups, assisting them in transforming their concepts into thriving businesses.
                     </p>

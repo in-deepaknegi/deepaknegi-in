@@ -11,6 +11,12 @@
     src: url('/fonts/sfpro.woff2');
 }
 @layer base {
+    p {
+        font-family: sfpro;
+        font-size: 1.1rem;
+        letter-spacing: 0.025em;
+        color: rgb(75, 85, 99);
+    }
     .form label {
         @apply block mb-2 text-sm font-medium text-gray-900;
     }

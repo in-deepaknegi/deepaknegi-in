@@ -14,7 +14,7 @@ const About = () => {
                             I&apos;m your <span className='gradient-cool'>all-in-one </span>
                             project solution
                         </h2>
-                        <p className='text-gray-700'>
+                        <p>
                             Experience the advantage of an all-inclusive project solution, where excellence, speed, and responsiveness converge to ensure the highest quality outcome.
                         </p>
                     </div>
@@ -26,7 +26,7 @@ const About = () => {
                                 className='w-12 h-12 mx-auto'
                             />
                             <h2 className='text-xl font-semibold'>Excellence</h2>
-                            <p className='text-gray-600 md:w-full max-w-sm mx-auto'>I take pride in doing things well. All client work is done with the best quality possible.</p>
+                            <p className='max-w-md mx-auto md:w-full'>I take pride in doing things well. All client work is done with the best quality possible.</p>
                         </div>
                         <div className='flex flex-col space-y-3 text-center mx-0 lg:mx-8'>
                             <Image
@@ -35,7 +35,7 @@ const About = () => {
                                 className='w-12 h-12 mx-auto'
                             />
                             <h2 className='text-xl font-semibold'>Speed</h2>
-                            <p className='text-gray-600 md:w-full max-w-sm mx-auto'>I like to work hard and fast. I know how important deadlines are to my clients.</p>
+                            <p className='max-w-md mx-auto md:w-full'>I like to work hard and fast. I know how important deadlines are to my clients.</p>
                         </div>
                         <div className='flex flex-col space-y-3 text-center mx-0 lg:mx-8'>
                             <Image
@@ -44,7 +44,7 @@ const About = () => {
                                 className='w-12 h-12 mx-auto'
                             />
                             <h2 className='text-xl font-semibold'>Responsiveness</h2>
-                            <p className='text-gray-600 md:w-full max-w-sm mx-auto'>You can rely on me to be responsive and clear whenever we work together.</p>
+                            <p className='max-w-md mx-auto md:w-full'>You can rely on me to be responsive and clear whenever we work together.</p>
                         </div>
                     </div>
                 </div>

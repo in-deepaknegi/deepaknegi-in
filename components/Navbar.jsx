@@ -10,7 +10,7 @@ const Navbar = () => {
                             Deepak Negi
                         </a>
                     </div>
-                    <div className='md:flex text-gray-600 font items-center gap-8 hidden font-sf'>
+                    <div className='lg:flex text-gray-600 font items-center gap-8 hidden font-sf'>
                         <a href="/">Home</a>
                         <a href="/about">About</a>
                         <a href="/work">Work</a>
