@@ -25,6 +25,9 @@ const Footer = () => {
                     </li>
                 </ul>
                 <span className="text-sm text-gray-500 sm:text-center ">© 2021-2022 <a href="/" className="hover:underline">Deepak Negi™</a>. All Rights Reserved.</span>
+                <span className='text-sm text-gray-500 underline ml-20'>
+                    <a href="/privacy">Privacy Policy</a>
+                </span>
             </div>
         </footer>
     )
