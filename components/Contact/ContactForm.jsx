@@ -46,7 +46,7 @@ const ContactForm = () => {
 
     return (
         <section className="bg-white">
-            <div className="py-3 lg:py-6 px-4 mx-auto max-w-screen-md">
+            <div className="py-3 lg:py-6 px-4 mx-auto max-w-3xl">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center gradient-cool">
                     Contact Us
                 </h2>

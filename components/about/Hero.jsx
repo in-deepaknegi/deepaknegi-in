@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <section className='relative overflow-hidden py-5 md:py-10 lg:py-20'>
             <div className='max-w-7xl flex lg:flex-row flex-col-reverse mx-auto px-3 md:px-6 lg:px-10 gap-3 md:gap-8 items-center'>
-                <div className='flex flex-col space-y-8 mx-3 md:mx-6 lg:mx-10 mt-1 lg:mt-2 lg:items-start items-center max-w-2xl'>
+                <div className='flex flex-col space-y-8 mx-3 md:mx-6 lg:mx-10 mt-2 lg:mt-6 lg:items-start items-center max-w-2xl'>
                     <h1 className='font-sf max-w-xl font-semibold text-left text-5xl md:text-6xl tracking-wider leading-[4rem]'>
                         <span className='relative'>Hi,
                             <span className='gradient-full'> I&apos;m Deepak </span>
@@ -36,6 +36,9 @@ const Hero = () => {
                         alt='author-image'
                         className='w-[70%] md:w-[85%] mx-auto'
                     />
+                    <div className='hidden lg:block absolute bottom-[6rem]'>
+                        <span className='text-4xl text-slate-600 font-wedd'>Deepak Negi</span>
+                    </div>
                 </div>
             </div>
         </section>

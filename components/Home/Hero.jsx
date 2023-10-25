@@ -13,7 +13,7 @@ const Hero = () => {
                     <h1 className='font-sf font-semibold text-left text-5xl md:text-6xl tracking-wider leading-[4rem]'>
                         <span className='relative'>
                             <span className='gradient-full'>Helping businesses </span>
-                             turn their ideas into reality
+                            turn their ideas into reality
                         </span>
                     </h1>
                     <p>
@@ -60,11 +60,11 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='w-full max-w-md lg:mr-0 mx-auto'>
-                        <Image
-                            src={Auth}
-                            alt='author-image'
-                            className='w-[70%] md:w-[85%] mx-auto'
-                        />
+                    <Image
+                        src={Auth}
+                        alt='author-image'
+                        className='w-[70%] md:w-[85%] mx-auto'
+                    />
                     <div className='hidden lg:block absolute top-[9rem] -rotate-12'>
                         <span className='text-2xl text-slate-600 font-bard'>Hi, I&apos;m Deepak!</span>
                     </div>
