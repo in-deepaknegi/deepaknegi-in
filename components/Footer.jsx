@@ -28,6 +28,10 @@ const Footer = () => {
                 <span className='text-sm text-gray-500 underline ml-20'>
                     <a href="/privacy">Privacy Policy</a>
                 </span>
+                <span className='text-sm text-gray-500 underline ml-4'>
+                    <a href="/terms">Terms and Conditions</a>
+                </span>
+                
             </div>
         </footer>
     )
