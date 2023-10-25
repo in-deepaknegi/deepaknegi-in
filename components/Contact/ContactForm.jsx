@@ -88,8 +88,14 @@ const ContactForm = () => {
                     </div>
 
                     <p className='text-sm text-gray-600'>
-                        By submitting this form you agree to our <span className='text-blue-700'>terms and conditions</span> and our
-                        <span className='text-blue-700'> privacy policy</span> which explains how we may collect, use and disclose your personal information including to third parties.
+                        By submitting this form you agree to our
+                        <span className='text-blue-700'>
+                            <a href="/terms"> terms and conditions </a>
+                        </span>
+                        and our
+                        <span className='text-blue-700'>
+                            <a href="/privacy"> privacy policy </a>
+                        </span> which explains how we may collect, use and disclose your personal information including to third parties.
                     </p>
 
                     <div className='flex gap-10'>

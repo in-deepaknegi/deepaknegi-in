@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Author from '@/public/peeps.png'
 import Auth from '@/public/peeps01.png'
 import Insta from '@/public/social/insta.svg'
 import Facebook from '@/public/social/facebook.svg'
