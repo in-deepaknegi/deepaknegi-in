@@ -1,7 +1,7 @@
 "use client"
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
-
+import LoadingBar from '@/components/LoadingBar';
 const ContactForm = () => {
 
     const [name, setName] = useState('');
@@ -9,10 +9,12 @@ const ContactForm = () => {
     const [message, setMessage] = useState('');
     const [error, setError] = useState([]);
     const [success, setSuccess] = useState(false);
+    const [loading, setLoading] = useState(false);
     const router = useRouter();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true)
 
         console.log(name);
         console.log(email);
@@ -38,6 +40,7 @@ const ContactForm = () => {
             setMessage("");
 
             setTimeout(() => {
+                setLoading(false)
                 router.push('/');
             }, 2000);
         }
@@ -46,6 +49,11 @@ const ContactForm = () => {
 
     return (
         <section className="bg-white">
+            {
+                loading && (
+                    <LoadingBar />
+                )
+            }
             <div className="py-3 lg:py-6 px-4 mx-auto max-w-3xl">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center gradient-cool">
                     Contact Us
@@ -112,9 +120,7 @@ const ContactForm = () => {
                             }
                         </div>
                     </div>
-
                 </form>
-
             </div>
         </section>
     )
