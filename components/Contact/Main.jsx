@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from '../Navbar'
-import ContactForm from './ContactForm'
+import Form from './Form'
 import Footer from '../Footer'
+import Info from './Info'
 
 const Main = () => {
     return (
         <>
             <Navbar />
-            <ContactForm />
+            <Form />
+            <Info />
             <Footer />
         </>
     )
