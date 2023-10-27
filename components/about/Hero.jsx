@@ -24,7 +24,6 @@ const Hero = () => {
                             <button className='bg-black rounded-full px-3 py-2 text-white'>
                                 <a href="/contact">
                                     Book a call with me
-
                                 </a>
                             </button>
                         </div>

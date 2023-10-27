@@ -1,4 +1,3 @@
-// components/LoadingBar.js
 import React from 'react';
 
 const LoadingBar = () => {
