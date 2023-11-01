@@ -63,6 +63,7 @@ const Hero = () => {
                     <Image
                         src={Auth}
                         alt='author-image'
+                        priority={false}
                         className='w-[70%] md:w-[85%] mx-auto'
                     />
                     <div className='hidden lg:block absolute top-[9rem] -rotate-12'>
