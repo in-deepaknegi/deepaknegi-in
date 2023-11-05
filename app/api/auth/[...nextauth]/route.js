@@ -25,6 +25,8 @@ const authOptions = {
                     const userExists = await User.findOne({ email });
 
                     if (!userExists) {
+                        //    http://localhost:3000/
+                        //    https://www.deepaknegi.in/
                         const res = await fetch('https://www.deepaknegi.in/api/user', {
                             method: "POST",
                             headers: {
