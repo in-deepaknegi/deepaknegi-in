@@ -1,10 +1,10 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import { signIn, useSession } from 'next-auth/react'
 import Image from 'next/image'
 import Loggg from '@/public/loggg.png'
 import GoogleLogo from '@/public/social/google-logo.svg'
-import { redirect, useRouter } from 'next/navigation'
+import { redirect } from 'next/navigation'
 
 const Form = () => {
 
