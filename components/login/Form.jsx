@@ -18,7 +18,7 @@ const Form = () => {
                 </a>
             </div>
             <div className='flex justify-between mb-16'>
-                <div className='mx-auto px-4 sm:px-6 lg:px-8'>
+                <div className=' w-full mx-auto px-4 sm:px-6 lg:px-8'>
 
                     <div className="relative flex flex-1 flex-col items-center justify-center pt-8">
                         <a href='/' className='flex mx-auto mb-10 w-auto'>
@@ -85,8 +85,8 @@ const Form = () => {
                         </div>
                     </footer>
                 </div>
-                <div className="absolute w-[12rem] top-0 right-0 text-slate-900/[0.07]">
-                    {/* <svg className="absolute inset-0 h-full w-full" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid-bg" width="32" height="32" patternUnits="userSpaceOnUse" x="100%" patternTransform="translate(0 -1)"><path d="M0 32V.5H32" fill="none" stroke="currentColor"></path></pattern></defs><rect width="100%" height="100%" fill="url(#grid-bg)"></rect></svg> */}
+
+                <div className="hidden md:block absolute w-[12rem] top-0 right-0 text-slate-900/[0.07]">
                     <Image
                         src={Loggg}
                         alt='login-side'

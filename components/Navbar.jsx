@@ -33,16 +33,18 @@ const Navbar = () => {
         <header className='border-b border-gray-300 h-20'>
             <div className='flex h-full max-w-7xl mx-auto items-center px-3 md:px-6 lg:px-10'>
                 <nav className='flex relative mx-3 md:mx-6 lg:mx-10 w-full z-50 justify-between items-center'>
-                    <div className='flex flex-row gap-2 items-center shrink-0'>
-                        <a href="/">
+                    <div className='shrink-0'>
+                        <a href="/" className='flex flex-row gap-2 items-center'>
                             <Image
                                 src={Logo}
                                 alt='site-logo'
                                 width={50}
                                 height={50}
                             />
+                            <span className='text-2xl font-sf my-auto font-medium'>
+                            Deepak Negi
+                            </span>
                         </a>
-                        <h1 className='text-2xl font-sf font-medium'>Deepak Negi</h1>
                     </div>
                     <div className='lg:flex text-gray-600 font items-center gap-8 hidden font-sf'>
                         <a href="/">Home</a>
@@ -52,7 +54,7 @@ const Navbar = () => {
                         <a href="/contact">Contact</a>
                     </div>
                     <div className='flex gap-4 items-center'>
-                        <button className='bg-gray-200 px-6 py-1 border rounded-full hover:bg-gray-300'>
+                        <button className='hidden md:block bg-gray-200 px-6 py-1 border rounded-full hover:bg-gray-300'>
                             <a href="/contact">
                                 Book a call
                             </a>
@@ -96,8 +98,8 @@ const Navbar = () => {
                                     </button> */}
                                 </div>
                                 {isExpanded && (
-                                    <div className="absolute w-[16rem] top-4 right-0 mt-10 bg-gray-50 border border-gray-200 rounded-xl shadow-lg">
-                                        <ul className='flex flex-col justify-center items-center'>
+                                    <div className="absolute w-[16rem] z-10 top-4 right-0 mt-10 bg-white bg-opacity-20 backdrop-blur-xl border border-gray-200 rounded-xl shadow-lg">
+                                        <ul className='flex flex-col z-20 justify-center items-center border-b pb-3'>
                                             <li className='mt-10'>
                                                 <Image src={session?.user?.image}
                                                     width={40}
@@ -114,7 +116,7 @@ const Navbar = () => {
                                             </li>
                                         </ul>
 
-                                        <ul className="py-2">
+                                        <ul className="">
                                             <li className="px-4 py-2 cursor-pointer flex gap-5 text-gray-700">
                                                 <span>
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="10" r="3" /><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" /></svg></span>

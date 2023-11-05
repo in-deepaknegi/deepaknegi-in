@@ -21,7 +21,7 @@ const Stack = () => {
                     </p>
                 </div>
 
-                <div className='max-w-4xl mx-auto grid grid-cols-3 gap-8 mt-20'>
+                <div className='max-w-4xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-20'>
                     <div className='flex gap-4 bg-gray-50 border p-3 rounded-xl'>
                         <div className='my-auto'>
                             <Image
