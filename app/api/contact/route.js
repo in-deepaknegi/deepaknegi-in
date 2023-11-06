@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import connectDB from '@/lib/mongobd';
+import connectContact from "../../../lib/dbContact";
 import Contact from '@/models/contact';
 import mongoose from "mongoose";
 
@@ -7,7 +7,7 @@ export async function POST(req) {
     const { name, email, message } = await req.json();
 
     try {
-        await connectDB();
+        await connectContact();
         await Contact.create({ name, email, message });
 
         return NextResponse.json({
@@ -28,4 +28,3 @@ export async function POST(req) {
         }
     }
 }
-
