@@ -20,7 +20,7 @@ const ContactForm = () => {
         console.log(email);
         console.log(message);
 
-        const res = await fetch('https://www.deepaknegi.in/api/contact', {
+        const res = await fetch('api/contact', {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
