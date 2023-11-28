@@ -11,10 +11,10 @@ const Navbar = () => {
     }
 
     return (
-        <header className='absolute inset-x-0 top-0 z-50 border-b'>
+        <header className='absolute inset-x-0 top-0 z-50'>
             <nav className='flex items-center justify-between p-7 lg:px-8' aria-label='Global'>
                 <div className='flex lg:flex-1'>
-                    <a href='/' className='-m-1.5 p-1.5 text-2xl font-medium'>
+                    <a href='/' className='-m-1.5 p-1.5 text-2xl rounded-xl font-bard tracking-widest'>
                         Deepak Negi
                     </a>
                 </div>
@@ -29,10 +29,10 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div className='hidden lg:flex lg:gap-x-12'>
-                    <a href='/about' className='text-sm font-semibold leading-6 text-gray-900'>About</a>
-                    <a href='/work' className='text-sm font-semibold leading-6 text-gray-900'>Work</a>
-                    <a href='/blog' className='text-sm font-semibold leading-6 text-gray-900'>Blog</a>
-                    <a href='/contact' className='text-sm font-semibold leading-6 text-gray-900'>Contact</a>
+                    <a href='/about' className='text-sm font-semibold leading-6 text-gray-800'>About</a>
+                    <a href='/work' className='text-sm font-semibold leading-6 text-gray-800'>Work</a>
+                    <a href='/blog' className='text-sm font-semibold leading-6 text-gray-800'>Blog</a>
+                    <a href='/contact' className='text-sm font-semibold leading-6 text-gray-800'>Contact</a>
                 </div>
                 <div className='hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-black'>
                     
