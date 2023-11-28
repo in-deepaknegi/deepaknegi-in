@@ -6,10 +6,10 @@ const Hero = () => {
     return (
         <section className='relative bg-white overflow-hidden'>
             <div className='grid max-w-7xl lg:grid-cols-12 mx-auto lg:gap-8'>
-                <div className='px-6 py-28 col-span-7 md:py-36 lg:px-0 lg:py-44 xl:col-span-7'>
+                <div className='px-6 pt-36 col-span-7 md:pt-40 lg:px-0 lg:pt-48 xl:col-span-7'>
                     <div className='mx-auto max-w-2xl lg:mx-6'>
                         <h1 className='text-6xl font-semibold'>
-                            Helping businesses turn their ideas into reality
+                            <span className='gradient-full'>Helping businesses</span> turn their ideas into reality
                         </h1>
                         <p className='mt-6 text-lg text-gray-600 font-light'>
                             I&apos;m a passionate developer, your to-go developer for creating stunning websites. Over the years, I&apos;ve had the privilege of collaborating with a diverse range of startups, assisting them in transforming their concepts into thriving businesses.
