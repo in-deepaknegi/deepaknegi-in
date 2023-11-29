@@ -5,7 +5,7 @@ import Mrida from '@/public/mridakriti.png'
 const Works = () => {
     return (
         <section className='relative isolate'>
-            <div className='relative mx-auto max-w-7xl  px-4 pt-16 sm:px-6 lg:px-8 lg:pt-10'>
+            <div className='relative mx-auto max-w-7xl  px-4 pt-16 sm:px-6 lg:px-8 lg:pb-24 lg:pt-10'>
                 <div className='max-w-3xl text-left mb-4'>
                     <h2 className='mt-2 text-3xl font-bold tracking-[-0.025em] text-gray-900 sm:text-5xl'>
                         Check out my <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#f6550c] via-[#d01147] to-[#5c4fdc]'>latest works</span>
@@ -16,7 +16,7 @@ const Works = () => {
                     </p>
                 </div>
 
-                <div className='bg-gray-100 rounded-xl'>
+                <div className='bg-gray-100/50 rounded-xl'>
                     <div className='flex gap-6 px-4 pt-7'>
                         <h1 className="text-4xl font-extrabold leading-none tracking-tight text-slate-900 sm:text-5xl sm:leading-[3.5rem]">
                             Mridakriti
@@ -83,7 +83,7 @@ const Works = () => {
 
                 </div>
 
-                <div className='bg-gray-100 rounded-xl mt-28'>
+                <div className='bg-gray-100/50 rounded-xl mt-28'>
                     <div className='flex gap-6 px-4 pt-7'>
                         <h1 className="text-4xl font-extrabold leading-none tracking-tight text-slate-900 sm:text-5xl sm:leading-[3.5rem]">
                             Sea Hawk Adventures
