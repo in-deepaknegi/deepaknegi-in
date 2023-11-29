@@ -23,7 +23,7 @@ const Hero = () => {
                             </div>
                         </div>
                         <h1 className='text-6xl font-semibold'>
-                            <span className='gradient-full'>Helping businesses</span> turn their ideas into reality
+                            <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#f6550c] via-[#d01147] to-[#5c4fdc]'>Helping businesses</span> turn their ideas into reality
                         </h1>
                         <p className='mt-6 text-lg text-gray-700 font-light'>
                             I&apos;m a passionate developer, your to-go developer for creating stunning websites. Over the years, I&apos;ve had the privilege of collaborating with a diverse range of startups, assisting them in transforming their concepts into thriving businesses.

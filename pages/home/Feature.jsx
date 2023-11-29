@@ -98,7 +98,7 @@ const Feature = () => {
                             Deploy faster
                         </h2>
                         <p className='mt-2 text-3xl font-bold tracking-[-0.025em] text-gray-900 sm:text-5xl'>
-                            I&apos;m your <span className='gradient-cool'>all-in-one </span>
+                            I&apos;m your <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#539cb4] via-[#7918dd] to-[#49c6a5]'>all-in-one </span>
                             project solution
                         </p>
                         <p className='mt-6 text-lg leading-8 text-gray-600'>
