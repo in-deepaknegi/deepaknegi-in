@@ -12,7 +12,7 @@ const Hero = () => {
                         src={Hero2}
                         alt='hero image 1'
                         priority={true}
-                        className='aspect-[3/2] w-full object-cover object-center rounded-tr-2xl rounded-br-2xl lg:absolute lg:inset-0 lg:aspect-auto lg:h-full'
+                        className='aspect-[3/2] w-full object-cover object-center lg:rounded-tr-2xl lg:rounded-br-2xl lg:absolute lg:inset-0 lg:aspect-auto lg:h-full'
                     />
                 </div>
                 <div className='px-6 pb-24 pt-10 sm:pb-32 col-span-12 lg:px-0 lg:pb-20 lg:pt-36 xl:col-span-6'>
