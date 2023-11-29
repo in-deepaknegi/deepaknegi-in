@@ -8,7 +8,7 @@ const Newletter = () => {
                     <h2 className='inline sm:block lg:inline'>Want product news and updated?</h2>
                     <p className='inline sm:block lg:inline'>Sing up for out newsletter</p>
                 </div>
-                <form action="" className='w-full max-w-md col-span-5 lg:py-2'>
+                <form action="" className='w-full max-w-md col-span-5 py-5 lg:py-2'>
                     <div className='flex gap-x-3'>
                         <label htmlFor="email-address" className="sr-only">Email address</label>
                         <input id="email-address" name="email" type="email" autoComplete="email" required className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-black/70 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email" />
