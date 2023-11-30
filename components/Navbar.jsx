@@ -32,7 +32,7 @@ const Navbar = () => {
                     <a href='/about' className='text-sm font-semibold leading-6 text-gray-800'>About</a>
                     <a href='/works' className='text-sm font-semibold leading-6 text-gray-800'>Works</a>
                     <a href='/blogs' className='text-sm font-semibold leading-6 text-gray-800'>Blogs</a>
-                    <a href='/contact' className='text-sm font-semibold leading-6 text-gray-800'>Contact</a>
+                    <a href='/contacts' className='text-sm font-semibold leading-6 text-gray-800'>Contact</a>
                 </div>
                 <div className='hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-black'>
                     <a className='inline-flex justify-center rounded-lg text-base font-semibold py-2 px-4 bg-primary text-white -my-2.5 ml-8' href='/login'>
