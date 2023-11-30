@@ -3,6 +3,7 @@ import Hero from '@/pages/home/Hero';
 import Feature from '@/pages/home/Feature';
 import Tools from '@/pages/home/Tools';
 import Works from '@/pages/home/Works';
+import Blogs from '@/pages/home/Blogs';
 import Newletter from '@/pages/home/Newletter';
 import Footer from '@/components/Footer';
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Feature />
       {/* <Tools /> */}
       <Works />
+      <Blogs />
       <Newletter />
       <Footer />
     </>

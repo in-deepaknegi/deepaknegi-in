@@ -32,7 +32,7 @@ const Works = () => {
                                 <h3 className="mt-5 text-4xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                                     Mridakriti
                                 </h3>
-                                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                <p className="mt-8 line-clamp-3 text-base leading-6 text-gray-600">
                                     I developed Mridakriti&apos;s website, contributing to the creation of a modern and user-friendly online presence. Leveraging my expertise, I collaborated closely with Mridakriti to design a responsive website and ensuring an engaging and seamless user experience.
                                 </p>
                             </div>
@@ -63,9 +63,9 @@ const Works = () => {
                             <div className='mt-4 max-w-xl'>
                                 <a href="#" className="text-xs z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Website Building</a>
                                 <h3 className="mt-5 text-4xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                    Cnippet
+                                    CnippetUI
                                 </h3>
-                                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                <p className="mt-8 line-clamp-3 text-base leading-6 text-gray-600">
                                     I developed Mridakriti&apos;s website, contributing to the creation of a modern and user-friendly online presence. Leveraging my expertise, I collaborated closely with Mridakriti to design a responsive website and ensuring an engaging and seamless user experience.
                                 </p>
                             </div>
