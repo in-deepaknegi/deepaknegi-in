@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Hero from '@/pages/about/Hero'
-import Newletter from '@/pages/home/Newletter'
+import Newletter from '@/components/Newletter'
 import Tools from '@/pages/about/Tool'
 
 export const metadata: Metadata = {

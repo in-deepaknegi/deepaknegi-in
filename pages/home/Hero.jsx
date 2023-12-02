@@ -6,7 +6,7 @@ import Hero2 from '@/public/Hero2.jpg'
 const Hero = () => {
     return (
         <section className='relative bg-white overflow-hidden'>
-            <div className='grid max-w-8xl grid-cols-12 mx-auto lg:gap-8'>
+            <div className='grid max-w-7xl grid-cols-12 mx-auto lg:gap-8 lg:ml-0'>
                 <div className='relative col-span-12 xl:col-span-6 lg:mr-8 xl:inset-0 xl:left-0 xl:mr-0'>
                     <Image
                         src={Hero2}
@@ -15,7 +15,7 @@ const Hero = () => {
                         className='aspect-[3/2] w-full object-cover object-center lg:rounded-tr-2xl lg:rounded-br-2xl lg:absolute lg:inset-0 lg:aspect-auto lg:h-full'
                     />
                 </div>
-                <div className='px-6 pb-24 pt-10 sm:pb-32 col-span-12 lg:px-0 lg:pb-20 lg:pt-36 xl:col-span-6'>
+                <div className='mx-auto px-6 pb-24 pt-10 sm:pb-32 col-span-12 lg:px-0 lg:pb-20 lg:pt-36 xl:col-span-6'>
                     <div className='mx-auto max-w-2xl lg:mx-6'>
                         <div className="hidden sm:mb-8 sm:flex">
                             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">

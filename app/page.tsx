@@ -4,19 +4,21 @@ import Feature from '@/pages/home/Feature';
 import Tools from '@/pages/home/Tools';
 import Works from '@/pages/home/Works';
 import Blogs from '@/pages/home/Blogs';
-import Newletter from '@/pages/home/Newletter';
+import Newletter from '@/components/Newletter';
 import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Feature />
-      {/* <Tools /> */}
-      <Works />
-      <Blogs />
-      <Newletter />
+      <main>
+        <Hero />
+        <Feature />
+        {/* <Tools /> */}
+        <Works />
+        <Blogs />
+        <Newletter />
+      </main>
       <Footer />
     </>
   )

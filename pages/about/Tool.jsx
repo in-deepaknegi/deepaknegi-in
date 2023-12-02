@@ -36,7 +36,7 @@ const Tool = [
 
 const Tools = () => {
     return (
-        <section className='bg-white py-24 sm:py-32'>
+        <section className='bg-white py-14 md:py-16 lg:py-32'>
             <div className='mx-auto max-w-7xl px-5 lg:px-8'>
                 <div className='mx-auto max-w-2xl lg:mx-0'>
                     <h2 className='text-4xl font-semibold'>
@@ -46,7 +46,7 @@ const Tools = () => {
                         I&apos;ve been a software developer for over 4 years, and while my stack has shifted over the years, I kept coming back to the same technologies. The following is the stack that I&aspo;ve developed & honed over the years as a software developer.
                     </p>
                 </div>
-                <ul role='list' className='mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-5'>
+                <ul role='list' className='mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 md:grid-cols-3 lg:mx-0 lg:max-w-none lg:grid-cols-5'>
                     {Tool.map((tool, index) => (
                         <li key={index} className='text-center'>
                             <Image
