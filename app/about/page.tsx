@@ -13,7 +13,9 @@ const page = () => {
     return (
         <>
             <Navbar />
-            <Hero />
+            <main>
+                <Hero />
+            </main>
             <Footer />
         </>
     )
