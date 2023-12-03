@@ -22,7 +22,7 @@ const Hero = () => {
                                 Announcing our next round of funding. <a href="#" className="font-semibold text-indigo-600"><span className="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
                             </div>
                         </div>
-                        <h1 className='text-6xl font-semibold'>
+                        <h1 className='text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl'>
                             <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#f6550c] via-[#d01147] to-[#5c4fdc]'>Helping businesses</span> turn their ideas into reality
                         </h1>
                         <p className='mt-6 text-lg text-gray-700 font-light'>

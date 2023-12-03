@@ -6,14 +6,14 @@ const Hero = () => {
     return (
         <section className='relative bg-white'>
             <div className='grid max-w-7xl grid-cols-12 mx-auto lg:gap-8 lg:mr-0'>
-                <div className='px-6 pb-16 pt-16 sm:pb-24 col-span-12 lg:px-8 lg:pb-30 lg:pt-44 xl:col-span-7'>
-                    <div className='mx-auto max-w-2xl'>
+                <div className='px-6 pb-16 pt-16 sm:pb-24 col-span-12 xl:px-0 lg:pb-30 lg:pt-44 xl:col-span-7'>
+                    <div className='mx-auto max-w-2xl xl:mx-0'>
                         <div className="hidden sm:mb-8 sm:flex">
                             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                                 Announcing our next round of funding. <a href="#" className="font-semibold text-indigo-600"><span className="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
                             </div>
                         </div>
-                        <h1 className='text-6xl font-semibold'>
+                        <h1 className='text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl'>
                             Hi I&apos;m Deepak and <br />
                             I&apos;m a developer
                         </h1>
