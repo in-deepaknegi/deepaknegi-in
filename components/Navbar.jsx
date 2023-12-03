@@ -12,9 +12,9 @@ const Navbar = () => {
 
     return (
         <header className='absolute inset-x-0 top-0 z-50'>
-            <nav className='flex items-center justify-between p-7 lg:px-8' aria-label='Global'>
-                <div className='flex lg:flex-1'>
-                    <a href='/' className='-m-1.5 p-1.5 text-2xl rounded-xl font-bard tracking-widest'>
+            <nav className='flex items-center justify-between p-7 lg:justify-end lg:px-8' aria-label='Global'>
+                <div className='flex lg:hidden'>
+                    <a href='/' className='-m-1.5 p-1.5 text-lg rounded-xl font-bard text-white tracking-widest lg:text-2xl'>
                         Deepak Negi
                     </a>
                 </div>
@@ -29,6 +29,7 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div className='hidden lg:flex lg:gap-x-12'>
+                    <a href='/' className='text-sm font-semibold leading-6 text-gray-800'>Home</a>
                     <a href='/about' className='text-sm font-semibold leading-6 text-gray-800'>About</a>
                     <a href='/works' className='text-sm font-semibold leading-6 text-gray-800'>Works</a>
                     <a href='/blogs' className='text-sm font-semibold leading-6 text-gray-800'>Blogs</a>
