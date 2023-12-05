@@ -29,7 +29,7 @@ const Hero = () => {
                             I&apos;m a passionate developer, your to-go developer for creating stunning websites. Over the years, I&apos;ve had the privilege of collaborating with a diverse range of startups, assisting them in transforming their concepts into thriving businesses.
                         </p>
                         <div className="mt-10 flex gap-x-6">
-                            <a href="/contact" className="rounded-md bg-black px-3.5 py-2.5 text-base text-white shadow-sm">Book a call</a>
+                            <a href="/contacts" className="rounded-md bg-black px-3.5 py-2.5 text-base text-white shadow-sm">Book a call</a>
                             <a href="/works" className="text-base font-medium leading-6 text-gray-800 hover:text-gray-900 my-auto">
                                 View my works <span aria-hidden="true">→</span></a>
                         </div>
