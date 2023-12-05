@@ -39,8 +39,9 @@ const Tools = () => {
         <section className='bg-white py-14 md:py-16 lg:py-32'>
             <div className='mx-auto max-w-7xl px-5 lg:px-8'>
                 <div className='mx-auto max-w-2xl lg:mx-0'>
-                    <h2 className='text-4xl font-semibold'>
-                        A simple Stack that you can Trust
+                    <h2 className='text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl'>
+                        A simple Stack that you can
+                        <span className='text-transparent bg-clip-text  bg-gradient-to-r from-[#071d4c] via-[#4134b8] to-[#a146eb]'> trust </span>
                     </h2>
                     <p className='mt-6 text-left text-[1.055rem] text-gray-900 font-light'>
                         I&apos;ve been a software developer for over 4 years, and while my stack has shifted over the years, I kept coming back to the same technologies. The following is the stack that I&aspo;ve developed & honed over the years as a software developer.

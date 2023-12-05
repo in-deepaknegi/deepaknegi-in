@@ -6,12 +6,12 @@ const Hero = () => {
     return (
         <section className='relative bg-white overflow-hidden'>
             <div className='grid max-w-7xl grid-cols-12 mx-auto lg:gap-8 lg:ml-0'>
-                <div className='relative col-span-12 xl:col-span-6 xl:inset-0 xl:left-0 xl:mr-0'>
+                <div className='col-span-12 relative xl:col-span-6 xl:inset-0 xl:left-0 xl:mr-0'>
                     <Image
                         src={Code1}
                         alt='hero image 1'
                         priority={true}
-                        className='aspect-[3/2] w-full object-cover object-bottom xl:rounded-tr-2xl xl:rounded-br-2xl lg:absolutelg:object-center lg:inset-0 lg:aspect-auto lg:h-full'
+                        className='aspect-[3/2] w-full object-cover object-bottom xl:rounded-tr-2xl xl:rounded-br-2xl lg:absolute lg:object-center lg:inset-0 lg:aspect-auto lg:h-full'
                     />
                 </div>
                 <div className='px-6 pb-16 pt-16 sm:pb-24 col-span-12 xl:px-0 lg:pb-[5.5rem] lg:pt-36 xl:col-span-6'>
@@ -23,9 +23,10 @@ const Hero = () => {
                         </div>
                         <h1 className='text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl'>
                             Hi I&apos;m
-                            <span className='text-transparent bg-clip-text  bg-gradient-to-r from-[#f6550c] via-[#d01147] to-[#5c4fdc]'> Deepak </span>
+                            <span className='text-transparent bg-clip-text  bg-gradient-to-r from-[#470396] via-[#561a94] to-[#ff00c8]'> Deepak </span>
                             and <br />
-                            I&apos;m a developer
+                            I&apos;m a
+                            <span className='text-transparent bg-clip-text  bg-gradient-to-r from-[#710340] via-[#ff0029] to-[#ed9a00]'> developer </span>
                         </h1>
                         <p className='mt-6 text-left text-[1.055rem] text-gray-900 font-light'>
                             Hello, I&apos;m Deepak Negi, a passionate web developer dedicated to crafting exceptional digital experiences. With a love for clean and efficient code, I specialize in creating websites that are not just functional, but also visually stunning. My toolkit includes JavaScript, Next.js, and Tailwind CSS, which I use to bring your web projects to life.
