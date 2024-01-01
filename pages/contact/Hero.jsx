@@ -120,18 +120,33 @@ const Hero = () => {
                         </span>.
                     </p>
 
-                    <div>
-                        {error && error.map((e) => (
-                            <div key={error} className={`${success ? 'text-green-600' : 'text-red-500'} mt-2 text-sm font-semibold`}>
-                                <svg className="flex-shrink-0 inline w-4 h-4 mr-3 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
-                                </svg>
-                                <span className='my-auto'>{e}</span>
-                            </div>
-                        ))
-                        }
+
+
+
+                    <div className='flex'>
+                        <button type="submit" className="py-3 px-5 text-sm font-medium text-center bg-blue-700 text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300">
+                            {success ? (
+                                <span>
+                                    Redirecting to homepage...
+                                </span>
+                            ) : (
+                                <span>
+                                    Send message
+                                </span>
+                            )}
+                        </button>
+                        <div className='my-auto ml-4'>
+                            {error && error.map((e) => (
+                                <div key={error} className={`${success ? 'text-green-600' : 'text-red-500'} text-sm font-semibold`}>
+                                    <svg className="flex-shrink-0 inline w-4 h-4 mr-3 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
+                                    </svg>
+                                    <span className='my-auto'>{e}</span>
+                                </div>
+                            ))
+                            }
+                        </div>
                     </div>
-                    <button type="submit" className="py-3 px-5 text-sm font-medium text-center bg-blue-700 text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300">Send message</button>
 
                 </form>
             </div>
