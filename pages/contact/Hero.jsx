@@ -1,6 +1,49 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
+import { useRouter } from 'next/navigation';
 
 const Hero = () => {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [error, setError] = useState([]);
+    const [success, setSuccess] = useState(false);
+
+    const router = useRouter();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        console.log(name);
+        console.log(email);
+        console.log(message);
+
+        const res = await fetch('api/contact', {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json"
+            },
+            body: JSON.stringify({
+                name, email, message,
+            })
+        })
+
+        const { msg, success } = await res.json();
+        setError(msg);
+        setSuccess(success);
+
+        if (success) {
+            setName("");
+            setEmail("");
+            setMessage("");
+
+            setTimeout(() => {
+                router.push('/');
+            }, 2000);
+        }
+    };
+
     return (
         <section className='isolate relative overflow-hidden'>
             <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
@@ -35,10 +78,12 @@ const Hero = () => {
                         </dl>
                     </div>
                 </div>
-                <form className="form space-y-5 max-w-xl px-4 mx-auto my-10 md:my-40">
+                <form onSubmit={handleSubmit} className="form space-y-5 max-w-xl px-4 mx-auto my-10 md:my-40">
                     <div>
                         <label htmlFor="name" >Your name</label>
                         <input
+                            onChange={(e) => setName(e.target.value)}
+                            value={name}
                             type="name"
                             id="name"
                             placeholder="name" required />
@@ -46,6 +91,8 @@ const Hero = () => {
                     <div>
                         <label htmlFor="email" >Your email</label>
                         <input
+                            onChange={(e) => setEmail(e.target.value)}
+                            value={email}
                             type="email"
                             id="email"
                             placeholder="name@gmail.com"
@@ -55,6 +102,8 @@ const Hero = () => {
                     <div className="sm:col-span-2">
                         <label htmlFor="message" >Your message</label>
                         <textarea
+                            onChange={(e) => setMessage(e.target.value)}
+                            value={message}
                             id="message"
                             rows="5"
                             placeholder="Leave a comment..."></textarea>
@@ -71,7 +120,19 @@ const Hero = () => {
                         </span>.
                     </p>
 
+                    <div>
+                        {error && error.map((e) => (
+                            <div key={error} className={`${success ? 'text-green-600' : 'text-red-500'} mt-2 text-sm font-semibold`}>
+                                <svg className="flex-shrink-0 inline w-4 h-4 mr-3 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
+                                </svg>
+                                <span className='my-auto'>{e}</span>
+                            </div>
+                        ))
+                        }
+                    </div>
                     <button type="submit" className="py-3 px-5 text-sm font-medium text-center bg-blue-700 text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300">Send message</button>
+
                 </form>
             </div>
         </section>
