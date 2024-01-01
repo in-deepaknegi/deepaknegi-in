@@ -18,19 +18,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: 'https://www.deepaknegi.in/blogs',
             lastModified: new Date(),
             changeFrequency: 'weekly',
-            priority: 0.7,
+            priority: 0.8,
         },
         {
             url: 'https://www.deepaknegi.in/contacts',
             lastModified: new Date(),
             changeFrequency: 'weekly',
-            priority: 0.6,
+            priority: 0.8,
         },
         {
             url: 'https://www.deepaknegi.in/works',
             lastModified: new Date(),
             changeFrequency: 'weekly',
-            priority: 0.5,
+            priority: 0.8,
         },
     ]
 }
