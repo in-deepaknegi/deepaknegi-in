@@ -51,7 +51,7 @@ const Hero = () => {
                     <div className='mx-auto max-w-xl lg:mx-0 lg:max-w-lg'>
                         <h2 className='text-4xl font-medium'>Get in touch</h2>
                         <p className='mt-4 text-gray-700'>
-                            Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt integer elementum id sem. Arcu sed malesuada et magna.
+                        We&apos;d love to hear from you! Whether you have questions, suggestions, or just want to say hello, feel free to reach out. Our team is always here to assist you. Drop us a message using the form below or connect through our contact details. We&apos;re eager to connect and assist in any way we can!
                         </p>
                         <dl className='mt-10 text-base text-gray-600 space-y-8'>
                             <div className='flex gap-6'>
