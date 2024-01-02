@@ -11,15 +11,13 @@ const companies = [
         siteType: 'Ecommerce',
         desc: "I developed Mridakriti's website, contributing to the creation of a modern and user-friendly online presence. Leveraging my expertise, I collaborated closely with Mridakriti to design a responsive website and ensuring an engaging and seamless user experience.",
         siteLink: 'https://www.mridakriti.com/',
-        studyUrl: '#',
     },
     {
         name: 'CnippetUI',
         siteImage: Cnippet,
         siteType: 'Website Building',
-        desc: "I developed Mridakriti's website, contributing to the creation of a modern and user-friendly online presence. Leveraging my expertise, I collaborated closely with Mridakriti to design a responsive website and ensuring an engaging and seamless user experience.",
-        siteLink: 'https://cnippetui.vercel.app/',
-        studyUrl: '#',
+        desc: "At Cnippet-UI, I developed a dynamic website that simplifies the creation of website components and templates. My contributions to Cnippet's website showcased my commitment to delivering a contemporary, user-centric digital platform. Collaborating closely with the team, I harnessed my expertise to design a responsive interface, guaranteeing an immersive and intuitive user journey.",
+        siteLink: 'https://cnippet-ui.vercel.app/',
     },
 ]
 
@@ -32,49 +30,42 @@ const Works = () => {
                         Check out my <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#f6550c] via-[#d01147] to-[#5c4fdc]'>latest works</span>
 
                     </h2>
-                    <p className='mt-6 text-lg leading-8  text-gray-500'>
+                    <p className='mt-6 text-lg leading-8 text-gray-800'>
                         Experience the advantage of an all-inclusive project solution, where excellence, speed, and responsiveness converge to ensure the highest quality outcome.
                     </p>
                 </div>
+
                 <div className='mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
                     {companies.map((company, i) => (
-                        <div key={i} className='flex flex-col items-start'>
-                            <div className='relative w-full'>
-                                <Image
-                                    src={company.siteImage}
-                                    alt='mridakriti'
-                                    className='w-full aspect-[16/8.4] rounded-2xl object-cover'
-                                />
-                            </div>
-                            <div className='mt-4 max-w-xl'>
-                                <a href="#" className="text-xs z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                                    {company.siteType}
-                                </a>
-                                <h3 className="mt-5 text-4xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                    {company.name}
-                                </h3>
-                                <p className="mt-8 line-clamp-3 text-base leading-6 text-gray-600">
+                        <div key={i}>
+                            <div className='group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-100 before:opacity-0 hover:before:opacity-100'>
+                                <div className='relative aspect-[16/8.25] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10'>
+                                    <Image
+                                        src={company.siteImage}
+                                        alt='navbar-img'
+                                        className='absolute object-cover inset-0 h-full w-full'
+                                    />
+                                </div>
+                                <p className='relative mt-4 text-xs font-medium text-slate-500'>{company.siteType}</p>
+
+                                <h4 className='mt-2 text-3xl font-medium text-slate-800 group-hover:text-black'>
+                                    <a href={company.siteLink} target="_blank">
+                                        <span className='absolute -inset-2.5 z-10'></span>
+                                        <span className='relative'>{company.name}</span>
+                                    </a>
+                                </h4>
+                                <p className="relative mt-4 line-clamp-3 text-base leading-6 text-gray-800">
                                     {company.desc}
                                 </p>
-                            </div>
-                            <div className="mt-8 flex gap-4">
-                                <a href={company.siteLink} className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700" target="_blank">
-                                    <span>
-                                        <span className="inline-flex items-center">
-                                            <span>Live preview</span>
-                                            <svg viewBox="0 0 20 20" className="ml-1.5 h-5 w-5 fill-slate-100" fillRule="evenodd" clipRule="evenodd"><path d="M7 3.25H3.25v13.5h13.5V13h-1.5v2.25H4.75V4.75H7v-1.5Zm9.75 0H10v1.5h4.19l-5.72 5.72 1.06 1.06 5.72-5.72V10h1.5V3.25Z"></path></svg>
-                                        </span>
-                                    </span>
-                                </a>
-                                <a href={company.studyUrl} className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15 ">
-                                    <span>View case study
-                                        <span aria-hidden="true" className="text-black/25">→</span>
-                                    </span>
-                                </a>
                             </div>
                         </div>
                     ))}
                 </div>
+            </div>
+            <div className='pointer-events-none relative z-10 mt-10 flex justify-center'>
+                <a href="/works" className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-primary text-white pointer-events-auto" >
+                    <span>Show more...</span>
+                </a>
             </div>
         </section>
 

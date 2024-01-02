@@ -120,9 +120,6 @@ const Hero = () => {
                         </span>.
                     </p>
 
-
-
-
                     <div className='flex'>
                         <button type="submit" className="py-3 px-5 text-sm font-medium text-center bg-blue-700 text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300">
                             {success ? (
