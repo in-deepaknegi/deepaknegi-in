@@ -3,18 +3,20 @@ import React from 'react';
 const Hero = () => {
     return (
         <>
-            <div class="relative isolate px-6 lg:px-8">
-                <div class="mx-auto max-w-4xl py-32 sm:py-48 lg:py-44">
-                    <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-                        <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                            Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+            <div className="relative isolate px-6 lg:px-8">
+                <div className="mx-auto max-w-4xl pb-28 pt-40 lg:pb-20 lg:pt-44">
+                    <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+                        <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                            Announcing our next round of funding. <a href="#" className="font-semibold text-indigo-600"><span className="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <h1 className='text-4xl font-semibold tracking-tight text-gray-900 sm:text-7xl'>
-                            <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#f6550c] via-[#d01147] to-[#5c4fdc]'>Helping businesses</span> turn their ideas into reality
+                    <div className="text-center">
+                        <h1 className='font-semibold tracking-tight text-5xl text-gray-900 md:text-6xl lg:text-7xl'>
+                            <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#f6550c] via-[#d01147] to-[#5c4fdc]'>
+                                Helping businesses 
+                            </span> turn their ideas into reality
                         </h1>
-                        <p className='mt-6 text-lg leading-8 text-gray-800'>
+                        <p className='mt-6 text-base md:text-lg text-gray-800'>
                             I&apos;m a passionate developer, your to-go developer for creating stunning websites. Over the years, I&apos;ve had the privilege of collaborating with a diverse range of startups, assisting them in transforming their concepts into thriving businesses.
                         </p>
                         <div className="mt-10 flex justify-center items-center gap-x-6">

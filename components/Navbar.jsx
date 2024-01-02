@@ -12,16 +12,16 @@ const Navbar = () => {
 
     return (
         <header className='absolute inset-x-0 top-0 z-50'>
-            <nav className='flex items-center justify-between py-6 lg:justify-end lg:px-8' aria-label='Global'>
+            <nav className='flex items-center justify-between px-6 py-6 lg:justify-end lg:px-8' aria-label='Global'>
                 <div className='flex flex-1'>
-                    <a href='/' className='-m-1.5 p-1.5 text-lg rounded-xl font-bard text-black tracking-wide lg:text-2xl'>
+                    <a href='/' className='-m-1.5 p-1.5 text-xl rounded-xl font-bard text-black tracking-wide lg:text-2xl'>
                         Deepak Negi
                     </a>
                 </div>
                 <div className='flex lg:hidden'>
                     <button
                         onClick={toggleMobileMenu}
-                        type='button' className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100'>
+                        type='button' className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900'>
                         <span className='sr-only'>Open main menu</span>
                         <svg className='h-6 w-6' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' aria-hidden='true'>
                             <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
