@@ -12,9 +12,9 @@ const Navbar = () => {
 
     return (
         <header className='absolute inset-x-0 top-0 z-50'>
-            <nav className='flex items-center justify-between p-7 lg:justify-end lg:px-8' aria-label='Global'>
-                <div className='flex lg:hidden'>
-                    <a href='/' className='-m-1.5 p-1.5 text-lg rounded-xl font-bard text-white tracking-widest lg:text-2xl'>
+            <nav className='flex items-center justify-between py-6 lg:justify-end lg:px-8' aria-label='Global'>
+                <div className='flex flex-1'>
+                    <a href='/' className='-m-1.5 p-1.5 text-lg rounded-xl font-bard text-black tracking-wide lg:text-2xl'>
                         Deepak Negi
                     </a>
                 </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
                     <a href='/contacts' className='text-sm font-semibold leading-6 text-gray-800'>Contact</a>
                 </div>
                 <div className='hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-black'>
-                    <a className='inline-flex justify-center rounded-lg text-base font-semibold py-2 px-4 bg-primary text-white -my-2.5 ml-8' href='/login'>
+                    <a className='inline-flex justify-center rounded-xl text- font-semibold py-1.5 px-3 bg-primary text-white -my-2.5 ml-8' href='/login'>
                         Log in <span aria-hidden='true'> →</span>
                     </a>
                 </div>
