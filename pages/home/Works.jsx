@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Mrida from '@/public/mridakriti.png';
-import Sea from '@/public/seahawk.png';
 import Cnippet from '@/public/cnippet.png';
 
 const companies = [
