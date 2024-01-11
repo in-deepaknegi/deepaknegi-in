@@ -19,15 +19,34 @@ const Newletter = () => {
                 email
             })
         })
+
+
+
         const { msg, success } = await res.json();
         setError(msg);
         setSuccess(success);
 
         if (success) {
+            try {
+                const res = await fetch("/api/send", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ email: email }), // Sending the email in the request body
+                });
+
+                const json = await res.json();
+                console.log(json);
+
+            } catch (error) {
+                console.error("Error:", error);
+            }
+
             setEmail("");
         }
     }
-    
+
     return (
         <section className='py-16 sm:py-24 lg:py-24'>
             <div className='mx-auto grid max-w-2xl lg:max-w-7xl grid-cols-1 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8'>
