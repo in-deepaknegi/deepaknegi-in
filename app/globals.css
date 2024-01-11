@@ -101,4 +101,11 @@
       transform: rotate(360deg);
     }
   }
+
+  .in input {
+    @apply mt-2  appearance-none tracking-wider text-slate-900 bg-white rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200;
+  }
+  .in label {
+    @apply block text-base tracking-wider font-medium leading-6 text-gray-900;
+  }
 }
