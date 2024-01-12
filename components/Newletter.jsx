@@ -1,15 +1,17 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 const Newletter = () => {
 
     const [email, setEmail] = useState('');
-    const [error, setError] = useState([]);
+    const [message, setMessage] = useState([]);
     const [success, setSuccess] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        setLoading(true)
         const res = await fetch('api/email', {
             method: "POST",
             headers: {
@@ -20,12 +22,13 @@ const Newletter = () => {
             })
         })
 
-
-
         const { msg, success } = await res.json();
-        setError(msg);
         setSuccess(success);
+        setMessage(msg);
+        setLoading(false);
 
+        // api call send-api
+        // automatically send email using send to new customers
         if (success) {
             try {
                 const res = await fetch("/api/send", {
@@ -33,7 +36,7 @@ const Newletter = () => {
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify({ email: email }), // Sending the email in the request body
+                    body: JSON.stringify({ email: email }),
                 });
 
                 const json = await res.json();
@@ -42,9 +45,9 @@ const Newletter = () => {
             } catch (error) {
                 console.error("Error:", error);
             }
-
-            setEmail("");
         }
+        setEmail("");
+        setSuccess(false);
     }
 
     return (
@@ -71,7 +74,10 @@ const Newletter = () => {
                                     Subscription Successfull
                                 </span>
                             ) : (
-                                <span>
+                                <span className='flex'>
+                                    {loading && (
+                                        <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                                    )}
                                     Subscribe
                                 </span>
                             )}
@@ -79,11 +85,8 @@ const Newletter = () => {
 
                     </div>
                     <div className='my-auto mt-2'>
-                        {error && error.map((e) => (
-                            <div key={error} className={`${success ? 'text-green-600' : 'text-black'} text-sm font-semibold`}>
-                                <svg className="flex-shrink-0 inline w-4 h-4 mr-3 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
-                                </svg>
+                        {message && message.map((e) => (
+                            <div key={message} className={`${success ? 'text-green-600' : 'text-black'} text-sm font-semibold`}>
                                 <span className='my-auto'>{e}</span>
                             </div>
                         ))

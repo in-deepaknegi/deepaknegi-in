@@ -12,20 +12,20 @@ export async function POST(req) {
 
         //check if the email is already present in the database
 
-        const existingEmail = await EmailModel.findOne({email});
+        const existingEmail = await EmailModel.findOne({ email });
 
-        if(existingEmail) {
+        if (existingEmail) {
             return NextResponse.json({
-                msg: ['Oops! It seems you are already grooving with us.'],
+                msg: ["🌟 Welcome back, valued customer. We're thrilled to have you with us again!"],
                 success: false,
             })
         }
-
+        // Oops! It seems you are already grooving with us.
         //create a new record if the email does not exist
         await EmailModel.create({ email, });
 
         return NextResponse.json({
-            msg: ['Email subscribed successfully'],
+            msg: ['🚀Email subscribed successfully. Welcome aboard!'],
             success: true,
         });
     } catch (error) {

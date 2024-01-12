@@ -11,7 +11,7 @@ export async function POST(req) {
         const data = await resend.emails.send({
             from: 'hello@deepaknegi.in', // your verified domain
             to: email, // the email address you want to send a message
-            subject: `${email} has a message!`,
+            subject: `Welcome to deepaknegi.in`,
             react: MessageUsEmail({ email }),
         });
 
