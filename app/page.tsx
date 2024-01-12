@@ -4,7 +4,7 @@ import Feature from '@/pages/home/Feature';
 import Tools from '@/pages/home/Tools';
 import Works from '@/pages/home/Works';
 import Blogs from '@/pages/home/Blogs';
-import Newletter from '@/components/Newletter';
+import Newsletter from '@/components/Newsletter';
 import Footer from '@/components/Footer';
 
 import type { Metadata } from 'next'
@@ -44,7 +44,7 @@ export default function Home() {
         {/* <Tools /> */}
         <Works />
         <Blogs />
-        <Newletter />
+        <Newsletter />
       </main>
       <Footer />
     </>

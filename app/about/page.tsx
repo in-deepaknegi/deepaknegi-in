@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Hero from '@/pages/about/Hero'
-import Newletter from '@/components/Newsletter'
+import Newsletter from '@/components/Newsletter'
 import Tools from '@/pages/about/Tool'
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ const page = () => {
             <main>
                 <Hero />
                 <Tools />
-                <Newletter />
+                <Newsletter />
             </main>
             <Footer />
         </>
