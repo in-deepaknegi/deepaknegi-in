@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const Newletter = () => {
 
-    const [email, setEmail] = useState('');
+    const [email, setEmail] = useState([]);
     const [message, setMessage] = useState([]);
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -64,6 +64,7 @@ const Newletter = () => {
                             id="email-address"
                             onChange={(e) => setEmail(e.target.value)}
                             value={email}
+                            multiple
                             type="email"
                             autoComplete="email"
                             required
